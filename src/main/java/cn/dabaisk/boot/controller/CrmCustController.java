@@ -96,7 +96,7 @@ public class CrmCustController extends BaseController {
         }
         PageView temp = new PageView(pageNum, pageSize, order, sort, model);
         QueryWrapper<CrmCust> wrapper=new QueryWrapper<CrmCust>(model);
-        temp.setPage(CrmCustService.total(model),CrmCustService.list(wrapper));
+        temp.setPage(CrmCustService.totalField(model),CrmCustService.list(wrapper));
         result.setData(temp);
         logger.info("-----end.PageView----"+temp);
         return result.toAdminJson();

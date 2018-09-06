@@ -31,5 +31,7 @@
     <sql id="Base_Column_List">
         Id, Name, SName, Pinyin, EName, TypeId, ParentId, Contact, Call, CateId, Status, TradeId, SourceId, AreaId, Address, Phone, Tel, Email, WeiXin, QQ, Descn
     </sql>
-
+    <select id="totalField" resultType="java.util.Map" parameterType="cn.dabaisk.boot.model.CrmCust" >
+        SELECT  count(1) as total ,sum(2) as sumName FROM crm_cust
+    </select>
 </mapper>

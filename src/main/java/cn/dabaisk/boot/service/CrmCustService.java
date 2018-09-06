@@ -14,5 +14,5 @@ import java.util.Map;
  * @since 2018-09-05
  */
 public interface CrmCustService extends IService<CrmCust> {
-    Map total(CrmCust crmCust);
+    Map totalField(CrmCust crmCust);
 }

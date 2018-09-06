@@ -22,9 +22,10 @@ import java.util.Map;
  */
 @Service
 public class CrmCustServiceImpl extends ServiceImpl<CrmCustMapper, CrmCust> implements CrmCustService {
-    public Map total(CrmCust crmCust){
-        List<Map> list=this.baseMapper.selectMaps(new QueryWrapper(crmCust));
-        return list.get(0);
+    public Map totalField(CrmCust crmCust){
+//        List<Map> list=this.baseMapper.selectMaps(new QueryWrapper(crmCust));
+//        return list.get(0);
+        return this.baseMapper.totalField(crmCust);
     }
 
 }
