@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.OaAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.OaAccount">
+        <id column="Id" property="Id" />
+        <result column="Name" property="Name" />
+        <result column="LoginName" property="LoginName" />
+        <result column="Password" property="Password" />
+        <result column="Url" property="Url" />
+        <result column="TypeName" property="TypeName" />
+        <result column="ComId" property="ComId" />
+        <result column="DeptId" property="DeptId" />
+        <result column="Descn" property="Descn" />
+        <result column="EmpId" property="EmpId" />
+        <result column="AddDate" property="AddDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, Name, LoginName, Password, Url, TypeName, ComId, DeptId, Descn, EmpId, AddDate
+    </sql>
+
+</mapper>

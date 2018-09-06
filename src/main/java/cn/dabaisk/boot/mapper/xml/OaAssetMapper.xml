@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.OaAssetMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.OaAsset">
+        <id column="Id" property="Id" />
+        <result column="Name" property="Name" />
+        <result column="No" property="No" />
+        <result column="Type" property="Type" />
+        <result column="ComId" property="ComId" />
+        <result column="DeptId" property="DeptId" />
+        <result column="Emp" property="Emp" />
+        <result column="Unit" property="Unit" />
+        <result column="Quantity" property="Quantity" />
+        <result column="Price" property="Price" />
+        <result column="Cost" property="Cost" />
+        <result column="Status" property="Status" />
+        <result column="BuyDate" property="BuyDate" />
+        <result column="PicPath" property="PicPath" />
+        <result column="SPicPath" property="SPicPath" />
+        <result column="AddDate" property="AddDate" />
+        <result column="AddEmp" property="AddEmp" />
+        <result column="Descn" property="Descn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, Name, No, Type, ComId, DeptId, Emp, Unit, Quantity, Price, Cost, Status, BuyDate, PicPath, SPicPath, AddDate, AddEmp, Descn
+    </sql>
+
+</mapper>

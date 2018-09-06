@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.OaApplicantMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.OaApplicant">
+        <id column="Id" property="Id" />
+        <result column="Name" property="Name" />
+        <result column="ApJob" property="ApJob" />
+        <result column="ComId" property="ComId" />
+        <result column="DeptId" property="DeptId" />
+        <result column="Sex" property="Sex" />
+        <result column="Birthdate" property="Birthdate" />
+        <result column="Married" property="Married" />
+        <result column="Phone" property="Phone" />
+        <result column="Email" property="Email" />
+        <result column="QQ" property="qq" />
+        <result column="Status" property="Status" />
+        <result column="Address" property="Address" />
+        <result column="HomeAddress" property="HomeAddress" />
+        <result column="Nation" property="Nation" />
+        <result column="Homeland" property="Homeland" />
+        <result column="Politics" property="Politics" />
+        <result column="Degree" property="Degree" />
+        <result column="ApDate" property="ApDate" />
+        <result column="ApEmp" property="ApEmp" />
+        <result column="Descn" property="Descn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, Name, ApJob, ComId, DeptId, Sex, Birthdate, Married, Phone, Email, QQ, Status, Address, HomeAddress, Nation, Homeland, Politics, Degree, ApDate, ApEmp, Descn
+    </sql>
+
+</mapper>

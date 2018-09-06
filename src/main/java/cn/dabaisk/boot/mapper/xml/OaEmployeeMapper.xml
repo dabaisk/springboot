@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.OaEmployeeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.OaEmployee">
+        <id column="Id" property="Id" />
+        <result column="Name" property="Name" />
+        <result column="LoginName" property="LoginName" />
+        <result column="No" property="No" />
+        <result column="Pinyin" property="Pinyin" />
+        <result column="Sex" property="Sex" />
+        <result column="Birthdate" property="Birthdate" />
+        <result column="Married" property="Married" />
+        <result column="ComId" property="ComId" />
+        <result column="DeptId" property="DeptId" />
+        <result column="Job" property="Job" />
+        <result column="IdCard" property="IdCard" />
+        <result column="Status" property="Status" />
+        <result column="Address" property="Address" />
+        <result column="Nation" property="Nation" />
+        <result column="Homeland" property="Homeland" />
+        <result column="Politics" property="Politics" />
+        <result column="Degree" property="Degree" />
+        <result column="Email" property="Email" />
+        <result column="OfficePhone" property="OfficePhone" />
+        <result column="MobilePhone" property="MobilePhone" />
+        <result column="FamilyPhone" property="FamilyPhone" />
+        <result column="WeiXin" property="WeiXin" />
+        <result column="QQ" property="qq" />
+        <result column="Zip" property="Zip" />
+        <result column="IntoDate" property="IntoDate" />
+        <result column="EnterDate" property="EnterDate" />
+        <result column="AddDate" property="AddDate" />
+        <result column="AddUser" property="AddUser" />
+        <result column="AttFile" property="AttFile" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, Name, LoginName, No, Pinyin, Sex, Birthdate, Married, ComId, DeptId, Job, IdCard, Status, Address, Nation, Homeland, Politics, Degree, Email, OfficePhone, MobilePhone, FamilyPhone, WeiXin, QQ, Zip, IntoDate, EnterDate, AddDate, AddUser, AttFile
+    </sql>
+
+</mapper>

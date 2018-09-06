@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.CrmCustMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.CrmCust">
+        <id column="Id" property="Id" />
+        <result column="Name" property="Name" />
+        <result column="SName" property="SName" />
+        <result column="Pinyin" property="Pinyin" />
+        <result column="EName" property="EName" />
+        <result column="TypeId" property="TypeId" />
+        <result column="ParentId" property="ParentId" />
+        <result column="Contact" property="Contact" />
+        <result column="Nickname" property="Nickname" />
+        <result column="CateId" property="CateId" />
+        <result column="Status" property="Status" />
+        <result column="TradeId" property="TradeId" />
+        <result column="SourceId" property="SourceId" />
+        <result column="AreaId" property="AreaId" />
+        <result column="Address" property="Address" />
+        <result column="Phone" property="Phone" />
+        <result column="Tel" property="Tel" />
+        <result column="Email" property="Email" />
+        <result column="WeiXin" property="WeiXin" />
+        <result column="QQ" property="qq" />
+        <result column="Descn" property="Descn" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        Id, Name, SName, Pinyin, EName, TypeId, ParentId, Contact, Call, CateId, Status, TradeId, SourceId, AreaId, Address, Phone, Tel, Email, WeiXin, QQ, Descn
+    </sql>
+
+</mapper>

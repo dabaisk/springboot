@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dabaisk.boot.mapper.OaEmployeeinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.dabaisk.boot.model.OaEmployeeinfo">
+        <id column="EmpId" property="EmpId" />
+        <result column="School" property="School" />
+        <result column="GradDate" property="GradDate" />
+        <result column="Major" property="Major" />
+        <result column="ForeignLang" property="ForeignLang" />
+        <result column="FamilyAddress" property="FamilyAddress" />
+        <result column="Education" property="Education" />
+        <result column="JobHistory" property="JobHistory" />
+        <result column="PicPath" property="PicPath" />
+        <result column="SPicPath" property="SPicPath" />
+        <result column="AttachFile" property="AttachFile" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EmpId, School, GradDate, Major, ForeignLang, FamilyAddress, Education, JobHistory, PicPath, SPicPath, AttachFile
+    </sql>
+
+</mapper>
