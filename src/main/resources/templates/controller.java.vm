@@ -36,6 +36,7 @@ public class ${table.controllerName} extends ${superControllerClass} {
 public class ${table.controllerName} {
 #end
 
+
 }
 
 #end

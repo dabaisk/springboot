@@ -1,4 +1,4 @@
-//package cn.dabaisk.boot;
+package cn.dabaisk.boot;
 //
 //import org.mybatis.generator.api.MyBatisGenerator;
 //import org.mybatis.generator.config.Configuration;
@@ -9,7 +9,7 @@
 //import java.util.ArrayList;
 //import java.util.List;
 //
-//public class MyBatisGeneratorTest {
+public class MyBatisGeneratorTest {
 //
 //    public static void main(String[] args) {
 //
@@ -28,4 +28,7 @@
 //
 //        }
 //    }
-//}
+    public static void main(String[] args) {
+        System.out.println("1111");
+    }
+}

@@ -6,10 +6,7 @@ import java.sql.SQLException;
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
-import com.baomidou.mybatisplus.generator.config.GlobalConfig;
-import com.baomidou.mybatisplus.generator.config.PackageConfig;
-import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 public class MyBatisPlusGenerator {
@@ -58,12 +55,20 @@ public class MyBatisPlusGenerator {
                 .setController("controller")//controller
                 .setEntity("model")
                 .setXml("mapper.xml");//mapper.xml
-
-        //5. 整合配置
+        //5. 模板文件目录
+        TemplateConfig tc=new TemplateConfig();
+        tc.setEntity("/templates/entity.java");
+        tc.setService("/templates/service.java");
+        tc.setServiceImpl("/templates/serviceImpl.java");
+        tc.setMapper("/templates/mapper.java");
+        tc.setXml("/templates/mapper.xml");
+        tc.setController("//templates/controller.java");
+        //6. 整合配置
         AutoGenerator  ag = new AutoGenerator();
         ag.setGlobalConfig(config)
                 .setDataSource(dsConfig)
                 .setStrategy(stConfig)
+                .setTemplate(tc)
                 .setPackageInfo(pkConfig);
         //6. 执行
         ag.execute();
