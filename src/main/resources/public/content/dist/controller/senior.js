@@ -1,4 +1,4 @@
-;layui.define(function (e) {
+layui.define(function (e) {
     layui.use(["admin", "carousel"], function () {
         var e = layui.$, a = (layui.admin, layui.carousel), t = (layui.element, layui.device());
         e(".layadmin-carousel").each(function () {

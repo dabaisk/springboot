@@ -38,7 +38,7 @@ public class CrmCustController extends BaseController {
     @RequestMapping(value = "/adminDataGrid")
     @ResponseBody
     public String dataGrid(CrmCust model) {
-        logger.info("--------开始--------");
+        logger.info("--------adminDataGrid开始--------");
         ResultUtils result = new ResultUtils();
 
         logger.info("page:" + getParameter("page") + ",pageSize:" + getParameter("rows"));
@@ -75,7 +75,7 @@ public class CrmCustController extends BaseController {
     @RequestMapping(value = "/adminDataGridTotal")
     @ResponseBody
     public String dataGridTotal(CrmCust model) {
-        logger.info("--------开始--------");
+        logger.info("--------adminDataGridTotal开始--------");
         ResultUtils result = new ResultUtils();
 
         logger.info("page:" + getParameter("page") + ",pageSize:" + getParameter("rows"));
